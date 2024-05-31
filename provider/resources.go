@@ -107,7 +107,7 @@ func Provider() tfbridge.ProviderInfo {
 		//
 		//nolint:lll
 		//P: shimv2.NewProvider(upcloud.New(version.Version)()),
-		P: shimv2.NewProvider(upcloud.New(version.Version)()),
+		P: shimv2.NewProvider(upcloud.Provider()),
 
 		Name:    "upcloud",
 		Version: version.Version,
